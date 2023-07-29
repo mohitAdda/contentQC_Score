@@ -1,0 +1,12 @@
+import nltk
+from nltk.corpus import stopwords
+from textblob import TextBlob
+from spellchecker import SpellChecker
+from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPTNeoForCausalLM
+from sklearn.metrics.pairwise import cosine_similarity
+import torch
+import numpy as np
+import warnings
+warnings.filterwarnings("ignore")
+nltk.download('punkt')
+nltk.download('stopwords')
